@@ -123,6 +123,17 @@ export const PollutionHub: React.FC = () => {
             </LiquidGlassCard>
           </div>
 
+          {/* Child & Curious Mind Analogy */}
+          <div className="p-4 rounded-xl bg-cyan-950/40 border border-cyan-400/30 flex items-start gap-3 text-xs leading-relaxed">
+            <span className="text-xl">🐢</span>
+            <div>
+              <strong className="text-cyan-200 block mb-0.5 font-bold">🧒 Why Plastic Never Truly Disappears:</strong>
+              <p className="text-white/80">
+                Unlike apple cores or paper that dissolve into garden dirt, plastic lasts hundreds of years! Ocean waves and sunshine break water bottles down into tiny colorful bits called <strong className="text-cyan-300">microplastics</strong>. Baby fish and sea turtles mistake them for floating jellyfish and eat them. That is why recycling and cleaning rivers is so important!
+              </p>
+            </div>
+          </div>
+
           {/* Breakdown & Top Rivers */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <LiquidGlassCard className="p-6">
@@ -233,6 +244,17 @@ export const PollutionHub: React.FC = () => {
                 {geigerActive ? <Volume2 className="w-4 h-4" /> : <VolumeX className="w-4 h-4" />}
                 <span>{geigerActive ? 'GEIGER AUDIO ON (PULSING)' : 'TEST B-GEIGIE DETECTOR'}</span>
               </button>
+            </div>
+
+            {/* Child & Curious Mind Analogy */}
+            <div className="p-3.5 rounded-xl bg-amber-950/40 border border-amber-400/30 flex items-start gap-3 text-xs leading-relaxed my-3">
+              <span className="text-xl">⚡</span>
+              <div>
+                <strong className="text-amber-200 block mb-0.5 font-bold">🧒 What are Geiger Clicks & Radiation?</strong>
+                <p className="text-white/80">
+                  Imagine tiny, invisible energy arrows flying through the air. A Geiger counter is like a mini musical drum that goes <strong className="text-amber-300">"CLICK!"</strong> every time an energy arrow hits it. Natural rocks make slow, safe clicks once every few seconds. But near old accident zones, the counter clicks rapidly like heavy rain, telling technicians to wear special protective suits!
+                </p>
+              </div>
             </div>
 
             {/* Radiation Physics Fundamentals Box */}
@@ -378,6 +400,17 @@ export const PollutionHub: React.FC = () => {
                 Nitrogen oxides catalyzing ground-level ozone
               </span>
             </LiquidGlassCard>
+          </div>
+
+          {/* Child & Curious Mind Analogy */}
+          <div className="p-3.5 rounded-xl bg-rose-950/40 border border-rose-400/30 flex items-start gap-3 text-xs leading-relaxed">
+            <span className="text-xl">🏭</span>
+            <div>
+              <strong className="text-rose-200 block mb-0.5 font-bold">🧒 How Smokestack Scrubbers Wash the Sky:</strong>
+              <p className="text-white/80">
+                Burning black coal for power is like having millions of dusty bonfires blowing yellow acid smoke into the sky. Modern clean plants install <strong className="text-rose-300">giant showers</strong> inside the smokestacks! Water mixed with crushed chalk/limestone washes the smoke, turning the dirty acid gas into drywall gypsum that builders use to build houses!
+              </p>
+            </div>
           </div>
 
           {/* Combustion Chemistry & Flue Gas Desulfurization */}

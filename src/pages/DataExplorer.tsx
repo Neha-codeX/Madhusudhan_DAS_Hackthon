@@ -205,6 +205,28 @@ export const DataExplorer: React.FC = () => {
           <Badge variant="accent">VERIFIED PEER-REVIEWED DATA</Badge>
         </div>
 
+        {/* Child & Curious Mind Friendly Analogy */}
+        <div className="p-3.5 rounded-xl bg-black/40 border border-white/10 flex items-start gap-3 text-xs leading-relaxed my-2">
+          <span className="text-xl">💡</span>
+          <div>
+            <strong className="text-amber-300 block mb-0.5 font-bold">🧒 How to understand this chart:</strong>
+            <p className="text-white/80">
+              {selectedMetric === 'temp' &&
+                'A 1.5°C fever in a human makes you feel dizzy and sick. In planet Earth, a 1.5°C global temperature fever melts colossal polar ice sheets and creates super-storms!'}
+              {selectedMetric === 'co2' &&
+                'Think of counting how many logs humans have tossed into Earth\'s fireplace. For 800,000 years, CO₂ was peaceful between 180 and 280 ppm. In just 70 years, we spiked it to 424 ppm!'}
+              {selectedMetric === 'paleo' &&
+                'Time machine trapped in ice! When snowflakes fell in Antarctica 800,000 years ago, they trapped tiny air bubbles. Deep ice drills let scientists taste ancient air, proving today\'s CO₂ is totally off the charts!'}
+              {selectedMetric === 'forcing' &&
+                'The blanket thickness meter: Greenhouse gases act like adding extra wool threads to planet Earth\'s blanket, trapping +2.91 extra Watts of heat on every square meter of land and ocean!'}
+              {selectedMetric === 'sectors' &&
+                'Where does it come from? Power plants and factories make the biggest smoke plumes, followed by farm animals, deforestation, and cargo ships.'}
+              {selectedMetric === 'countries' &&
+                'A few big manufacturing countries produce most of the world\'s emissions. When they switch to clean solar and wind, the whole planet breathes easy!'}
+            </p>
+          </div>
+        </div>
+
         <div className="h-[400px] w-full pt-4">
           <ResponsiveContainer width="100%" height="100%">
             {selectedMetric === 'temp' ? (

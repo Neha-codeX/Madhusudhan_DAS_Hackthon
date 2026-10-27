@@ -118,6 +118,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       biome: 'Cryosphere',
       mechanism: 'Radiative Absorptance Flip',
       equation: 'Δα = α_ice (0.85) - α_ocean (0.06) → +1.2 W/m² forcing',
+      kidAnalogy: '🧒 White T-Shirt vs Black T-Shirt: White ice acts like a white shirt reflecting hot sunlight away. When it melts into dark blue water, it acts like a black shirt that soaks up the heat, melting even more ice in a runaway domino effect!',
       description:
         'Fresh snow reflects 85% of incoming solar irradiance. As sea ice thaws, dark ocean water reflects only 6%, absorbing 94% of solar heat. This warms the surface layer and melts neighboring ice in an accelerating non-linear spiral.',
       danger: 'Critical',
@@ -128,6 +129,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       biome: 'Arctic Yedoma',
       mechanism: 'Methanogenic Anaerobic Decomposition',
       equation: '1,400 Gt Organic Carbon Stored → CH₄ + CO₂ Gas Ebullition',
+      kidAnalogy: '🧒 The Melting Giant Freezer: The frozen ground in the Arctic is like a giant ancient freezer storing billions of tons of frozen plants. When the freezer unplugs and melts, microbes wake up and burp out huge bubbles of methane gas!',
       description:
         'Arctic permafrost soils hold more than twice the entire carbon mass currently in the Earth\'s atmosphere. Deep microbial thaw creates thermokarst collapse lakes, releasing methane (CH₄) with 84x the global warming potential of CO₂ over a 20-year horizon.',
       danger: 'Critical',
@@ -138,6 +140,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       biome: 'Biosphere',
       mechanism: 'Biotic Moisture Pump Failure',
       equation: '20 Billion Tons H₂O Vapor / Day → Savannization Tipping Point',
+      kidAnalogy: '🧒 Earth\'s Giant Tree Sprinklers: A single giant rainforest tree sips underground water and sprays 1,000 liters of cool cloud vapor into the sky each day, creating flying rivers of rain that water South America!',
       description:
         'A single mature rainforest tree transpires up to 1,000 liters of water vapor daily, powering continental weather corridors called "flying rivers". Deforestation beyond 20–25% permanently breaks regional rainfall recycling, flipping the rainforest into fire-prone scrubland.',
       danger: 'Severe',
@@ -148,6 +151,7 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       biome: 'North Atlantic',
       mechanism: 'Freshwater Salinity Buoyancy Cap',
       equation: 'ΔSalinity < -0.2 PSU → Sinking Rate Drops by 15%',
+      kidAnalogy: '🧒 The Ocean Conveyor Belt: Heavy, cold salty water sinks near the Arctic to drag warm tropical water north like a giant conveyor belt. Melting glaciers pour in light freshwater that refuses to sink, stalling the whole belt!',
       description:
         'Greenland meltwater introduces millions of tons of cold freshwater into the subpolar gyre. Lower salinity water is less dense and refuses to sink, weakening the Atlantic Meridional Overturning Circulation (AMOC) toward its lowest velocity in 1,000 years.',
       danger: 'Extreme',
@@ -270,6 +274,17 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
               </div>
               <div className="text-xs text-emerald-400 font-semibold mt-2">
                 = Net Atmospheric Accumulation: +19.2 Gt CO₂ / year (+2.46 ppm / year)
+              </div>
+            </div>
+
+            {/* Child & Curious Mind Analogy */}
+            <div className="p-3.5 rounded-xl bg-amber-950/40 border border-amber-400/30 flex items-start gap-3 text-xs leading-relaxed my-4">
+              <span className="text-xl">🛁</span>
+              <div>
+                <strong className="text-amber-200 block mb-0.5 font-bold">🧒 The Giant Bathtub Analogy (How to picture this):</strong>
+                <p className="text-white/80">
+                  Think of our sky like a giant bathtub! Human fossil fuels and fires are a big open faucet pouring in <strong className="text-rose-300">41.5 billion tons</strong> of water each year. Forests and oceans are two drains sucking away <strong className="text-emerald-300">22.3 billion tons</strong>. Because the faucet pours twice as fast as the drains can empty, the bathtub is filling up and overflowing!
+                </p>
               </div>
             </div>
 
@@ -435,9 +450,13 @@ export const Home: React.FC<HomeProps> = ({ onNavigate }) => {
                     {loop.equation}
                   </div>
 
-                  <p className="text-xs text-[var(--text-secondary)] leading-relaxed">
+                  <p className="text-xs text-[var(--text-secondary)] leading-relaxed mb-3">
                     {loop.description}
                   </p>
+
+                  <div className="p-3 rounded-lg bg-black/40 border border-emerald-400/20 text-xs leading-relaxed text-emerald-300">
+                    {loop.kidAnalogy}
+                  </div>
                 </div>
               </LiquidGlassCard>
             ))}
